@@ -13,4 +13,4 @@ def clean_downloads(folder_path, days=30):
             if file_mtime < threshold:
                 shutil.move(file_path, os.path.join(folder_path, "Archive", filename))
 
-clean_downloads("/path/to/your/downloads")
+clean_downloads(r"/path/to/your/downloads")
