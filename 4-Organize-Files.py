@@ -8,4 +8,4 @@ def organize_files(folder_path):
         os.makedirs(ext_folder, exist_ok=True)
         shutil.move(os.path.join(folder_path, filename), os.path.join(ext_folder, filename))
 
-organize_files("/path/to/your/folder")
+organize_files(r"/path/to/your/folder")
