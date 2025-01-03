@@ -6,4 +6,4 @@ def rename_files(folder_path, prefix):
         new_name = f"{prefix}_{count}.{ext}"
         os.rename(os.path.join(folder_path, filename), os.path.join(folder_path, new_name))
 
-rename_files("/path/to/your/folder", "Document")
+rename_files(r"/path/to/your/folder", "Document")
