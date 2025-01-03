@@ -11,6 +11,8 @@ def clean_downloads(folder_path, days=30):
         if os.path.isfile(file_path):
             file_mtime = datetime.fromtimestamp(os.path.getmtime(file_path))
             if file_mtime < threshold:
+                if not os.path.exists(os.path.join(folder_path, "Archive")):
+                    os.makedirs(os.path.join(folder_path, "Archive"))
                 shutil.move(file_path, os.path.join(folder_path, "Archive", filename))
 
 clean_downloads(r"/path/to/your/downloads")
