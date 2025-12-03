@@ -2,7 +2,7 @@ import os
 import shutil
 
 # ====== CONFIG =======
-ROOT = "D:\Pictures\Parents-Visit\Mac-Backup-copy"   # change this
+ROOT = ""   # change this
 KEEP_FORMAT = "heic"            # "heic" or "jpeg"
 DUP_DIR = os.path.join(ROOT, "duplicates")
 # ======================
@@ -63,3 +63,4 @@ for base, variants in files_map.items():
     )
 
 print("\nDone! Check the 'duplicates' folder.")
+
